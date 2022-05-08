@@ -1,0 +1,29 @@
+.all {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  color: aliceblue;
+  background-color: #121212;
+  margin-top: 5%;
+  width: 70%;
+  height: 15vw;
+  border-radius: 5px;
+  transition: height 0.3s, width 0.3s;
+  /* display: flex; */
+}
+.card:hover {
+  height: 16vw;
+  width: 73%;
+}
+
+.gif {
+  /* border-radius: 10px; */
+  height: 85%;
+  top: 7%;
+  right: 30%;
+  position: relative;
+}
