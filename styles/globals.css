@@ -16,3 +16,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#classmates-card {
+  background-color: #131523;
+}
+
+#val-card {
+  background-color: rgba(21, 31, 43, 0.9);
+  /* background-image: radial-gradient(rgba(21, 31, 43, 0.9), #212129);
+  border: 0; */
+}
+
+#kloth-card {
+  background-color: #1e140b;
+}
