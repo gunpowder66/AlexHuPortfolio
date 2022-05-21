@@ -51,7 +51,7 @@
 
 
 .gif {
-  border-radius: 15px;
+  /* border-radius: 15px; */
   height: 100%;
   width: 40%;
   /* top: 5%; */
@@ -87,11 +87,11 @@
 
 /* ---------------------------KLOTH STUFF--------------------------- */
 .klothGif {
-  border-radius: 15px;
+  /* border-radius: 15px; */
   height: 93%;
   width: 40%;
-  top: 2.5%;
-  left: 0.5%;
+  top: 3%;
+  /* left: 0.3%; */
   /* right: 30%; */
   position: relative;
   overflow: hidden;

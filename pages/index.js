@@ -9,6 +9,7 @@ import { Card, Paper } from '@mui/material';
 export default function LandingPage() {
   const [val, setVal] = useState(false);
   const [course, setCourse] = useState(false);
+  const [kloth, setKloth] = useState(false);
 
 
   return (
@@ -74,11 +75,11 @@ export default function LandingPage() {
         <Card
         className={styles.card}
         id='kloth-card'
-        onMouseEnter={() => setVal(true)}
-        onMouseLeave={() => setVal(false)}>
+        onMouseEnter={() => setKloth(true)}
+        onMouseLeave={() => setKloth(false)}>
           <div className={styles.klothGif}>
             {
-              (val)
+              (kloth)
               ? <Image src={'/gifs/reviews_filters.gif'} alt='gif' layout='fill' objectFit="contain"/>
               : <Image src={'/klothfreeze.png'} alt='gif' layout='fill' objectFit='contain' />
             }
@@ -95,7 +96,28 @@ export default function LandingPage() {
         </Card>
       </div>
 
-      <div style={{marginTop: '5%'}}>MEOW</div>
+      <div className={styles.cardDiv} >
+        <Card
+        className={styles.card}
+        id='klothapi-card'
+        onMouseEnter={() => setVal(true)}
+        onMouseLeave={() => setVal(false)}>
+          <div className={styles.gif}>
+            <Image src={'/KlothApi.png'} alt='gif' layout='fill' objectFit='contain' />
+          </div>
+          <div className={styles.title}>Kloth - Api</div>
+          <div className={styles.description}>
+          Back-end api for an e-commerce website designed to be scalable and meet demands of any traffic
+          <br/>
+          <br/>
+          Built with:
+          <br/>
+          Node, Nginx, Express, Postgres, and K6
+          </div>
+        </Card>
+      </div>
+
+      <div style={{marginTop: '5%'}}>𓁹‿𓁹</div>
     </div>
   )
 }
