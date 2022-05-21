@@ -7,7 +7,7 @@ import useWindowDimensions from '../resources/useWindowDimensions.js'
 export default function About() {
   const { width } = useWindowDimensions();
 
-  if (width < 650) {
+  if (width <= 950) {
     return <Mobileabout />
   }
 

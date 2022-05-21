@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import Head from 'next/head'
@@ -13,11 +14,15 @@ export default function LandingPage() {
   const [val, setVal] = useState(false);
   const [course, setCourse] = useState(false);
   const [kloth, setKloth] = useState(false);
-  const { width } = useWindowDimensions();
 
-  if (width < 650) {
-    return <Mobileindex />
+  if (typeof window !== 'undefined') {
+    const { width } = useWindowDimensions();
+
+    if (width <= 950) {
+      return <Mobileindex />
+    }
   }
+
   return (
     <div className={styles.all}>
       <Head>
