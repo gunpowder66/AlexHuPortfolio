@@ -3,21 +3,14 @@ import { useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 
-import styles from '../styles/Home.module.css'
-import Mobileindex from '../components/Mobileindex.js'
+import styles from '../styles/MobileHome.module.css'
 import { Card, Paper } from '@mui/material';
 
-import useWindowDimensions from '../resources/useWindowDimensions.js'
-
-export default function LandingPage() {
+export default function Mobileindex() {
   const [val, setVal] = useState(false);
   const [course, setCourse] = useState(false);
   const [kloth, setKloth] = useState(false);
-  const { width } = useWindowDimensions();
 
-  if (width < 650) {
-    return <Mobileindex />
-  }
   return (
     <div className={styles.all}>
       <Head>

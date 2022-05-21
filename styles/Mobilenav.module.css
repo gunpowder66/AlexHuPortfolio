@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1%;
+  /* height: 50vw; */
+}
+
+.pages {
+  font-size: 4vw;
+  margin-top: 2%;
+  height: 10%;
+  width: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pages:hover {
+  color: rgb(228, 228, 228);
+}
+
+.image {
+  width: 50vw;
+  /* height: 5%; */
+  position: relative;
+}

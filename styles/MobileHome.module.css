@@ -1,0 +1,124 @@
+.all {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardDiv {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  color: aliceblue;
+  background-color: #121212;
+  margin-top: 10%;
+  width: 100%;
+  height: 60vw;
+  /* border-radius: 5px; */
+  transition: height 0.3s, width 0.3s;
+  cursor: pointer;
+  /* display: flex; */
+}
+/* .card:hover {
+  height: 16vw;
+  width: 73%;
+}
+.card:hover .title {
+  font-size: 1.3vw;
+  left: 43%;
+}
+.card:hover .description {
+  font-size: 1.1vw;
+  left: 43%;
+}
+.card:hover .Klothtitle {
+  font-size: 1.3vw;
+  left: 43%;
+}
+.card:hover .Klothdescription {
+  font-size: 1.1vw;
+  left: 43%;
+}
+.card:hover .gif {
+  width: 41%;
+}
+.card:hover .klothGif {
+  width: 41%;
+} */
+
+
+.gif {
+  /* border-radius: 15px; */
+  height: 65%;
+  width: 100%;
+  top: 2%;
+  /* left: 25%; */
+  /* right: 30%; */
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  /* left: 42%; */
+  top: 2%;
+  /* bottom: 95%; */
+  font-size: 3vw;
+  font-weight: bold;
+  transition: font-size 0.3s, left 0.3s;
+}
+
+.description {
+  position: relative;
+  text-align: center;
+  left: 25%;
+  /* bottom: 85%; */
+  top: 2%;
+  width: 50%;
+  font-size: 1.7vw;
+  /* overflow-wrap: break-word; */
+  transition: font-size 0.3s, left 0.3s;
+}
+
+/* #classmates-card {
+  background-color: aliceblue;
+} */
+
+/* ---------------------------KLOTH STUFF--------------------------- */
+.klothGif {
+  /* border-radius: 15px; */
+  height: 65%;
+  width: 100%;
+  top: 2%;
+  /* left: 0.3%; */
+  /* right: 30%; */
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+.Klothtitle {
+  position: relative;
+  text-align: center;
+  /* left: 44%; */
+  top: 2%;
+  font-size: 4vw;
+  font-weight: bold;
+  transition: font-size 0.3s, left 0.3s;
+}
+
+.Klothdescription {
+  position: relative;
+  text-align: center;
+  left: 25%;
+  top: 2%;
+  width: 50%;
+  font-size: 2vw;
+  /* overflow-wrap: break-word; */
+  transition: font-size 0.3s, left 0.3s;
+}

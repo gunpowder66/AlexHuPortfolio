@@ -1,15 +1,8 @@
 import Image from 'next/image'
-import styles from '../styles/About.module.css'
-import Mobileabout from '../components/Mobileabout.js'
+import styles from '../styles/Mobileabout.module.css'
 
-import useWindowDimensions from '../resources/useWindowDimensions.js'
 
 export default function About() {
-  const { width } = useWindowDimensions();
-
-  if (width < 650) {
-    return <Mobileabout />
-  }
 
   return (
     <div className={styles.all}>

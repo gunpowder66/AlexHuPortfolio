@@ -1,16 +1,9 @@
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/Mobilenav.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import MobileNav from './Mobilenav.js'
 
-import useWindowDimensions from '../resources/useWindowDimensions.js'
 
 export default function Navbar () {
-  const { width } = useWindowDimensions();
-
-  if (width < 650) {
-    return <MobileNav />
-  }
 
   return (
     <div className={styles.nav}>
