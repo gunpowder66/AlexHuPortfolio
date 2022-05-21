@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable react/no-unescaped-entities */
+
 import Image from 'next/image'
 import styles from '../styles/About.module.css'
 import Mobileabout from '../components/Mobileabout.js'
@@ -5,11 +8,15 @@ import Mobileabout from '../components/Mobileabout.js'
 import useWindowDimensions from '../resources/useWindowDimensions.js'
 
 export default function About() {
-  const { width } = useWindowDimensions();
 
-  if (width <= 950) {
-    return <Mobileabout />
+  if (typeof window !== 'undefined') {
+    const { width } = useWindowDimensions();
+
+    if (width <= 950) {
+      return <Mobileabout />
+    }
   }
+
 
   return (
     <div className={styles.all}>
@@ -20,7 +27,7 @@ export default function About() {
         Hello!
       </div>
       <div className={styles.aboutme}>
-        My name is Alex Hu and I am a software engineer looking to build fun an interesting projects.
+        My name is Alex Hu and I am a software engineer looking to build fun and interesting projects.
       </div>
       <div className={styles.aboutme}>
         Contact me at:

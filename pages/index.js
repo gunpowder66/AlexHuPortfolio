@@ -17,7 +17,7 @@ export default function LandingPage() {
 
   if (typeof window !== 'undefined') {
     const { width } = useWindowDimensions();
-
+    
     if (width <= 950) {
       return <Mobileindex />
     }
