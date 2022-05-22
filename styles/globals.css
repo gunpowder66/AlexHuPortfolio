@@ -19,18 +19,22 @@ a {
 
 #classmates-card {
   background-color: #131523;
+  transition: height 1s, width 1s;
 }
 
 #val-card {
   background-color: rgba(21, 31, 43, 0.9);
+  transition: height 1s, width 1s;
   /* background-image: radial-gradient(rgba(21, 31, 43, 0.9), #212129);
   border: 0; */
 }
 
 #kloth-card {
   background-color: #1e140b;
+  transition: height 1s, width 1s;
 }
 
 #klothapi-card {
   background-color: #191919;
+  transition: height 1s, width 1s;
 }

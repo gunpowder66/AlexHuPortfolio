@@ -11,6 +11,11 @@
   display: flex;
 }
 
+
+.card:hover {
+  height: 16vw;
+  width: 73%;
+}
 .card {
   color: aliceblue;
   background-color: #121212;
@@ -18,13 +23,9 @@
   width: 70%;
   height: 15vw;
   border-radius: 5px;
-  transition: height 0.3s, width 0.3s;
+  transition: height 1s, width 1s;
   cursor: pointer;
   /* display: flex; */
-}
-.card:hover {
-  height: 16vw;
-  width: 73%;
 }
 .card:hover .title {
   font-size: 1.3vw;
@@ -59,7 +60,7 @@
   /* right: 30%; */
   position: relative;
   overflow: hidden;
-  transition: width 0.3s;
+  transition: width 1s;
 }
 
 .title {
@@ -68,7 +69,7 @@
   bottom: 95%;
   font-size: 1.2vw;
   font-weight: bold;
-  transition: font-size 0.3s, left 0.3s;
+  transition: font-size 1s, left 1s;
   color: aliceblue;
 }
 
@@ -80,7 +81,7 @@
   font-size: 1vw;
   color: aliceblue;
   /* overflow-wrap: break-word; */
-  transition: font-size 0.3s, left 0.3s;
+  transition: font-size 1s, left 1s;
 }
 
 /* #classmates-card {
@@ -93,11 +94,11 @@
   height: 93%;
   width: 40%;
   top: 3%;
-  /* left: 0.3%; */
+  /* left: 1%; */
   /* right: 30%; */
   position: relative;
   overflow: hidden;
-  transition: width 0.3s;
+  transition: width 1s;
 }
 
 .Klothtitle {
@@ -106,7 +107,7 @@
   bottom: 90%;
   font-size: 1.2vw;
   font-weight: bold;
-  transition: font-size 0.3s, left 0.3s;
+  transition: font-size 1s, left 1s;
   color: aliceblue;
 }
 
@@ -117,6 +118,6 @@
   width: 50%;
   font-size: 1vw;
   /* overflow-wrap: break-word; */
-  transition: font-size 0.3s, left 0.3s;
+  transition: font-size 1s, left 1s;
   color: aliceblue;
 }
