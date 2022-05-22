@@ -63,6 +63,7 @@
 }
 
 .title {
+  color: aliceblue;
   position: relative;
   text-align: center;
   /* left: 42%; */
@@ -74,6 +75,7 @@
 }
 
 .description {
+  color: aliceblue;
   position: relative;
   text-align: center;
   left: 25%;
@@ -103,6 +105,7 @@
 }
 
 .Klothtitle {
+  color: aliceblue;
   position: relative;
   text-align: center;
   /* left: 44%; */
@@ -113,6 +116,7 @@
 }
 
 .Klothdescription {
+  color: aliceblue;
   position: relative;
   text-align: center;
   left: 25%;
