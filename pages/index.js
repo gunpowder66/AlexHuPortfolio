@@ -17,7 +17,7 @@ export default function LandingPage() {
 
   if (typeof window !== 'undefined') {
     const { width } = useWindowDimensions();
-    
+
     if (width <= 950) {
       return <Mobileindex />
     }
@@ -40,11 +40,12 @@ export default function LandingPage() {
         onMouseLeave={() => setCourse(false)}
         onClick={() => window.open('https://github.com/gunpowder66/classmates', '_blank')}>
           <div className={styles.gif}>
-            {
-              (course)
-              ? <Image src={'/gifs/classmates.gif'} alt='gif' layout='fill' objectFit="contain"/>
-              : <Image src={'/classmatesfreeze.png'} alt='gif' layout='fill' objectFit='contain' />
-            }
+            <div className={styles.notimg}>
+              <Image src={'/gifs/classmates.gif'} alt='gif' layout='fill' objectFit="contain"/>
+            </div>
+            <div className={styles.img}>
+              <Image src={'/classmatesfreeze.png'} alt='gif' layout='fill' objectFit='contain'/>
+            </div>
           </div>
           <div className={styles.title}>Classmates</div>
           <div className={styles.description}>
@@ -66,11 +67,12 @@ export default function LandingPage() {
         onMouseLeave={() => setVal(false)}
         onClick={() => window.open('https://github.com/gunpowder66/Valorankings', '_blank')}>
           <div className={styles.gif}>
-            {
-              (val)
-              ? <Image src={'/gifs/Valorankings_voting.gif'} alt='gif' layout='fill' objectFit="contain"/>
-              : <Image src={'/staticimg_val.png'} alt='gif' layout='fill' objectFit='contain' />
-            }
+            <div className={styles.notimg}>
+              <Image src={'/gifs/Valorankings_voting.gif'} alt='gif' layout='fill' objectFit="contain"/>
+            </div>
+            <div className={styles.img}>
+              <Image src={'/staticimg_val.png'} alt='gif' layout='fill' objectFit='contain' />
+            </div>
           </div>
           <div className={styles.title}>ValoRankings</div>
           <div className={styles.description}>
@@ -92,11 +94,12 @@ export default function LandingPage() {
         onMouseLeave={() => setKloth(false)}
         onClick={() => window.open('https://github.com/gunpowder66/Kloth', '_blank')}>
           <div className={styles.klothGif}>
-            {
-              (kloth)
-              ? <Image src={'/gifs/reviews_filters.gif'} alt='gif' layout='fill' objectFit="contain"/>
-              : <Image src={'/klothfreeze.png'} alt='gif' layout='fill' objectFit='contain' />
-            }
+            <div className={styles.notimg}>
+              <Image src={'/gifs/reviews_filters.gif'} alt='gif' layout='fill' objectFit="contain"/>
+            </div>
+            <div className={styles.img}>
+              <Image src={'/klothfreeze.png'} alt='gif' layout='fill' objectFit='contain' />
+            </div>
           </div>
           <div className={styles.Klothtitle}>Kloth</div>
           <div className={styles.Klothdescription}>

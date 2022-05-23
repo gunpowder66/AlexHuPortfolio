@@ -49,6 +49,20 @@
 .card:hover .klothGif {
   width: 41%;
 }
+.card:hover .img {
+  z-index: 1;
+  opacity: 0;
+}
+.card:hover .notimg {
+  z-index: 5;
+}
+
+.img {
+  z-index: 5;
+}
+.notimg {
+  z-index: 1;
+}
 
 
 .gif {
